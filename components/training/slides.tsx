@@ -16,7 +16,7 @@ export const slides: Slide[] = [
   {
     id: "title",
     content: (
-      <div className="flex flex-col items-center text-center">
+      <div className="text-center">
         <Kicker>Spotlight Iași · Club Speech Contest</Kicker>
         <h1 className="font-heading text-primary mt-4 text-4xl font-bold text-balance md:text-6xl">
           Contestant Training
