@@ -60,9 +60,11 @@ export const slides: Slide[] = [
         <Bullets
           items={[
             "A paid member in good standing of this club.",
-            "Not serving as a contest official today — judge, timer, counter, Sergeant at Arms, or contest chair.",
+            "Not serving as a contest official today — judge, timer, counter, Sergeant at Arms, contest chair, or contest Toastmaster.",
             "No education requirement to meet — that only applies to the International Speech Contest.",
             "You're never charged a fee to compete.",
+            "A member of more than one club? You can compete in each club's contest — just not more than one Area-level contest of the same type later on.",
+            "Rare edge cases: certain incumbent District/International officers or candidates, and a past World Champion of Public Speaking, are ineligible.",
           ]}
         />
         <Callout tone="blue">
@@ -134,6 +136,92 @@ export const slides: Slide[] = [
     ),
   },
   {
+    id: "judging-content-details",
+    content: (
+      <>
+        <Kicker>Judging</Kicker>
+        <SlideTitle>What &ldquo;Content&rdquo; Actually Covers</SlideTitle>
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
+          <div>
+            <p className="text-secondary font-heading text-lg font-bold">
+              Table Topics
+            </p>
+            <Bullets
+              items={[
+                <>
+                  <strong>Speech Development:</strong> a clear opening, body,
+                  and conclusion — even in under 2 minutes.
+                </>,
+                <>
+                  <strong>Effectiveness:</strong> is your point clear and
+                  logical? Did you actually answer the question?
+                </>,
+              ]}
+            />
+          </div>
+          <div>
+            <p className="text-secondary font-heading text-lg font-bold">
+              Humorous Speech
+            </p>
+            <Bullets
+              items={[
+                <>
+                  <strong>Speech Development:</strong> real structure — not a
+                  list of unrelated jokes.
+                </>,
+                <>
+                  <strong>Effectiveness:</strong> did the audience get your
+                  purpose and stay interested?
+                </>,
+                <>
+                  <strong>Speech Value:</strong> an actual idea or point,
+                  even inside the humor.
+                </>,
+                <>
+                  <strong>Audience Response:</strong> did people genuinely
+                  laugh and stay engaged?
+                </>,
+              ]}
+            />
+          </div>
+        </div>
+      </>
+    ),
+  },
+  {
+    id: "judging-delivery-language",
+    content: (
+      <>
+        <Kicker>Judging</Kicker>
+        <SlideTitle>Delivery &amp; Language — Same for Both</SlideTitle>
+        <Bullets
+          items={[
+            <>
+              <strong>Physical:</strong> appearance, body language, and how
+              you use the speaking area.
+            </>,
+            <>
+              <strong>Voice:</strong> variety in pitch, pace, and volume —
+              and being clearly heard.
+            </>,
+            <>
+              <strong>Manner</strong> (Humorous only): enthusiasm, assurance,
+              and a genuine connection with the audience.
+            </>,
+            <>
+              <strong>Appropriateness:</strong> word choice that fits your
+              purpose and this audience.
+            </>,
+            <>
+              <strong>Correctness:</strong> proper grammar, pronunciation,
+              and word choice.
+            </>,
+          ]}
+        />
+      </>
+    ),
+  },
+  {
     id: "how-winners-decided",
     content: (
       <>
@@ -147,7 +235,8 @@ export const slides: Slide[] = [
               3rd = <strong>1 point</strong> — most total points wins.
             </>,
             "You don't need one flawless, perfect speech — you need to land in the top 3 for enough judges.",
-            "Judged purely on your speech — never your club, age, gender, or background.",
+            "Judged purely on your speech — never your club, age, gender, or background. You (and the audience) generally won't know who judged you, either.",
+            "If there's ever a tie, a secret tiebreaking judge — unknown to everyone but the chief judge — settles it.",
           ]}
         />
         <Callout tone="blue">
@@ -233,8 +322,9 @@ export const slides: Slide[] = [
             <>
               Speaker's Certification of Eligibility and Originality —{" "}
               <strong>two separate certifications, two signatures.</strong>{" "}
-              Check the right contest box (Humorous / Table Topics) and
-              contest level (Club).
+              Fill in your club number, member number, and district; check
+              the right contest box (Humorous / Table Topics) and contest
+              level (Club).
             </>,
             "Planning props? Tell the contest chair in advance — mostly relevant for Humorous Speech.",
           ]}
@@ -253,7 +343,7 @@ export const slides: Slide[] = [
             "Briefing: names confirmed, rules reviewed, mic tested, you draw for speaking order.",
             "Running late or missed the briefing? Tell the contest chair immediately — miss your introduction and your alternate takes over.",
             "~20 min out: one more rules reminder. ~5 min out: everyone takes their seats.",
-            "Contest opens: ground rules announced to the whole audience.",
+            "Contest opens: ground rules announced to the whole audience — for Humorous, they'll also mention your content is self-chosen and could be personal. That's routine, not a comment on you.",
           ]}
         />
       </>
@@ -276,6 +366,7 @@ export const slides: Slide[] = [
               Wait for <strong>&ldquo;You&apos;re welcome&rdquo;</strong> —
               that&apos;s when your timing officially starts.
             </>,
+            "When you finish, quietly return to your seat (or exit, for Table Topics) and clear any props during the minute of silence that follows.",
           ]}
         />
         <Callout tone="blue">
@@ -318,6 +409,7 @@ export const slides: Slide[] = [
             "Don't enter or leave mid-speech — only during the minute of silence between speakers.",
             "Table Topics: no notes or devices.",
             "Never reference another contestant or their speech.",
+            "Don't delay once you reach the speaking area — start speaking soon after you arrive.",
           ]}
         />
       </>
@@ -373,6 +465,7 @@ export const slides: Slide[] = [
                 "Forms signed & submitted",
                 "Props flagged, if any",
                 "Briefing attended, mic tested",
+                "Know the judging criteria — prep structure & audience connection",
               ]}
             />
           </div>
@@ -385,6 +478,8 @@ export const slides: Slide[] = [
                 "Phone silent",
                 "“Thank you, Contest Chair” → wait for “You're welcome”",
                 "Know your time window",
+                "Don't reference other contestants",
+                "Table Topics: no notes, no devices, wait outside until called",
               ]}
             />
           </div>
