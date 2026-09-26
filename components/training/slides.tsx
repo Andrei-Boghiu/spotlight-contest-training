@@ -18,16 +18,16 @@ export const slides: Slide[] = [
     content: (
       <div className="text-center">
         <Kicker>Spotlight Iași · Club Speech Contest</Kicker>
-        <h1 className="font-heading text-primary mt-4 text-4xl font-bold text-balance md:text-6xl">
+        <h1 className="mt-4 font-heading text-4xl font-bold text-balance text-primary md:text-6xl">
           Contestant Training
         </h1>
-        <p className="text-secondary mt-3 text-xl font-semibold md:text-2xl">
+        <p className="mt-3 text-xl font-semibold text-secondary md:text-2xl">
           Humorous Speech &amp; Table Topics
         </p>
         <div className="mx-auto max-w-2xl">
           <Lede>
-            Everything you need to know to compete fairly, avoid an
-            accidental disqualification, and know exactly what to expect.
+            Everything you need to know to compete fairly, avoid an accidental
+            disqualification, and know exactly what to expect.
           </Lede>
         </div>
       </div>
@@ -70,8 +70,8 @@ export const slides: Slide[] = [
           ]}
         />
         <Callout tone="blue">
-          If you advance, you must stay eligible the whole way through — even
-          an issue discovered later can disqualify you retroactively.
+          If you advance, you must stay eligible the whole way through — even an
+          issue discovered later can disqualify you retroactively.
         </Callout>
       </>
     ),
@@ -105,8 +105,8 @@ export const slides: Slide[] = [
           ]}
         />
         <Callout>
-          The Table Topics question will be general — no expert knowledge
-          needed — and everyone gets the exact same one.
+          The Table Topics question will be general — no expert knowledge needed
+          — and everyone gets the exact same one.
         </Callout>
       </>
     ),
@@ -125,11 +125,7 @@ export const slides: Slide[] = [
               "55%",
               "The substance — structure, ideas, does it land with the audience",
             ],
-            [
-              "Delivery",
-              "30%",
-              "How you physically and vocally present it",
-            ],
+            ["Delivery", "30%", "How you physically and vocally present it"],
             [
               "Language",
               "15%",
@@ -149,7 +145,7 @@ export const slides: Slide[] = [
         <SlideTitle>What &ldquo;Content&rdquo; Actually Covers</SlideTitle>
         <div className="mt-6 grid gap-6 md:grid-cols-2">
           <div>
-            <h2 className="text-secondary font-heading text-lg font-bold">
+            <h2 className="font-heading text-lg font-bold text-secondary">
               Table Topics
             </h2>
             <Bullets
@@ -166,7 +162,7 @@ export const slides: Slide[] = [
             />
           </div>
           <div>
-            <h2 className="text-secondary font-heading text-lg font-bold">
+            <h2 className="font-heading text-lg font-bold text-secondary">
               Humorous Speech
             </h2>
             <Bullets
@@ -180,12 +176,12 @@ export const slides: Slide[] = [
                   purpose and stay interested?
                 </>,
                 <>
-                  <strong>Speech Value:</strong> an actual idea or point,
-                  even inside the humor.
+                  <strong>Speech Value:</strong> an actual idea or point, even
+                  inside the humor.
                 </>,
                 <>
-                  <strong>Audience Response:</strong> did people genuinely
-                  laugh and stay engaged?
+                  <strong>Audience Response:</strong> did people genuinely laugh
+                  and stay engaged?
                 </>,
               ]}
             />
@@ -203,12 +199,12 @@ export const slides: Slide[] = [
         <Bullets
           items={[
             <>
-              <strong>Physical:</strong> appearance, body language, and how
-              you use the speaking area.
+              <strong>Physical:</strong> appearance, body language, and how you
+              use the speaking area.
             </>,
             <>
-              <strong>Voice:</strong> variety in pitch, pace, and volume —
-              and being clearly heard.
+              <strong>Voice:</strong> variety in pitch, pace, and volume — and
+              being clearly heard.
             </>,
             <>
               <strong>Manner</strong> (Humorous only): enthusiasm, assurance,
@@ -219,8 +215,8 @@ export const slides: Slide[] = [
               purpose and this audience.
             </>,
             <>
-              <strong>Correctness:</strong> proper grammar, pronunciation,
-              and word choice.
+              <strong>Correctness:</strong> proper grammar, pronunciation, and
+              word choice.
             </>,
           ]}
         />
@@ -246,8 +242,8 @@ export const slides: Slide[] = [
           ]}
         />
         <Callout tone="blue">
-          Timing disqualification is decided separately from scoring — even
-          the best-scored speech can still be disqualified on time.
+          Timing disqualification is decided separately from scoring — even the
+          best-scored speech can still be disqualified on time.
         </Callout>
       </>
     ),
@@ -267,8 +263,8 @@ export const slides: Slide[] = [
           ]}
         />
         <Callout>
-          Humorous Speech only: real structure — opening, body, close. A
-          string of unrelated one-liners doesn't count. Keep it clean.
+          Humorous Speech only: real structure — opening, body, close. A string
+          of unrelated one-liners doesn't count. Keep it clean.
         </Callout>
       </>
     ),
@@ -324,13 +320,18 @@ export const slides: Slide[] = [
         <SlideTitle>Forms &amp; Deadlines</SlideTitle>
         <Bullets
           items={[
-            "Speech Contestant Profile — your bio info, used for interview questions and press releases. Return it by your deadline.",
+            <>
+              Speech Contestant Profile — your bio info, used for interview
+              questions and press releases.{" "}
+              <strong>Return it to the contest chair</strong> by your deadline.
+            </>,
             <>
               Speaker's Certification of Eligibility and Originality —{" "}
-              <strong>two separate certifications, two signatures.</strong>{" "}
-              Fill in your club number, member number, and district; check
-              the right contest box (Humorous / Table Topics) and contest
-              level (Club).
+              <strong>two separate certifications, two signatures.</strong> Fill
+              in your club number, member number, and district; check the right
+              contest box (Humorous / Table Topics) and contest level (Club).{" "}
+              <strong>Hand the signed form to the chief judge</strong> — not the
+              contest chair — before the contest.
             </>,
             "Planning props? Tell the contest chair in advance — mostly relevant for Humorous Speech.",
           ]}
@@ -346,9 +347,8 @@ export const slides: Slide[] = [
         <SlideTitle>Before You Go On</SlideTitle>
         <Bullets
           items={[
-            "Briefing: names confirmed, rules reviewed, mic tested, you draw for speaking order.",
-            "Running late or missed the briefing? Tell the contest chair immediately. If you still haven't shown up by the time the contest chair is introduced to begin the contest, you're disqualified and your alternate officially takes your place — this is much earlier than your own speaking turn.",
-            "~20 min out: one more rules reminder. ~5 min out: everyone takes their seats.",
+            "Briefing with the contest chair: names confirmed, rules reviewed, mic tested, you draw for speaking order.",
+            "Running late or missed the briefing? Tell the contest chair immediately. If you still haven't shown up by the time the contest chair is introduced to begin the contest, you're disqualified.",
             "Contest opens: ground rules announced to the whole audience — for Humorous, they'll also mention your content is self-chosen and could be personal. That's routine, not a comment on you.",
           ]}
         />
@@ -372,13 +372,13 @@ export const slides: Slide[] = [
               Wait for <strong>&ldquo;You&apos;re welcome&rdquo;</strong> —
               that&apos;s when your timing officially starts.
             </>,
-            "When you finish, quietly return to your seat and clear any props during the minute of silence that follows.",
+            'When you finish, say "Contest Chair", wait for the contest chair to shake your hand, and quietly return to your seat and clear any props during the minute of silence that follows.',
           ]}
         />
         <Callout tone="blue">
-          Table Topics: you were waiting outside — no notes, no devices —
-          called in one at a time. Humorous: you&apos;ve been watching from
-          your seat the whole time.
+          Table Topics: you were waiting outside — no notes, no devices — called
+          in one at a time. Humorous: you&apos;ve been watching from your seat
+          the whole time.
         </Callout>
       </>
     ),
@@ -448,8 +448,8 @@ export const slides: Slide[] = [
           items={[
             "The 1st place winner advances to represent the club at the Area D4 contest.",
             <>
-              To advance, you have to stay eligible the whole way through —
-              same rules as the &ldquo;Am I Eligible?&rdquo; slide.
+              To advance, you have to stay eligible the whole way through — same
+              rules as the &ldquo;Am I Eligible?&rdquo; slide.
             </>,
             "If the winner can't compete at Area D4, the next-highest-placed contestant from today steps in instead.",
             "Reminder: for these two contest types, the chain stops at District.",
@@ -466,7 +466,7 @@ export const slides: Slide[] = [
         <SlideTitle>Quick Recap</SlideTitle>
         <div className="mt-6 grid gap-6 md:grid-cols-3">
           <div>
-            <h2 className="text-secondary font-heading text-lg font-bold">
+            <h2 className="font-heading text-lg font-bold text-secondary">
               Before
             </h2>
             <Bullets
@@ -479,7 +479,7 @@ export const slides: Slide[] = [
             />
           </div>
           <div>
-            <h2 className="text-secondary font-heading text-lg font-bold">
+            <h2 className="font-heading text-lg font-bold text-secondary">
               During
             </h2>
             <Bullets
@@ -496,7 +496,7 @@ export const slides: Slide[] = [
             />
           </div>
           <div>
-            <h2 className="text-secondary font-heading text-lg font-bold">
+            <h2 className="font-heading text-lg font-bold text-secondary">
               After
             </h2>
             <Bullets
@@ -508,7 +508,7 @@ export const slides: Slide[] = [
             />
           </div>
         </div>
-        <p className="font-heading text-primary mt-10 text-center text-2xl font-bold md:text-3xl">
+        <p className="mt-10 text-center font-heading text-2xl font-bold text-primary md:text-3xl">
           Good luck — go make Spotlight Iași proud.
         </p>
       </div>
