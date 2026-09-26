@@ -4,8 +4,6 @@ import logo from "@/public/logo.svg"
 import spotlight from "@/public/spotlight.svg"
 import iasi from "@/public/iasi.svg"
 
-// spotlight.svg and iasi.svg are white wordmarks (colorized via SVG filter), meant
-// to sit on the brand's dark blue band — never on a light background.
 export function BrandMark({ priority = false }: { priority?: boolean }) {
   return (
     <div

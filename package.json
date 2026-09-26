@@ -1,6 +1,7 @@
 {
-  "name": "tm",
-  "version": "0.0.1",
+  "name": "spotlight-training",
+  "version": "0.1.0",
+  "description": "Contestant training presentation for Spotlight Iași's club speech contest — a subdomain of spotlightiasi.club.",
   "type": "module",
   "private": true,
   "scripts": {

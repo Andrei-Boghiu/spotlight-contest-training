@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next"
 
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/lib/site"
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Spotlight Iași — Contestant Training",
+    name: SITE_TITLE,
     short_name: "Contestant Training",
-    description:
-      "Club speech contest training for Humorous Speech and Table Topics contestants.",
+    description: SITE_DESCRIPTION,
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",
