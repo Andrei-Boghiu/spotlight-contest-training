@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { BRAND_HEADER_GRADIENT } from "@/lib/site"
 import { BrandMark } from "@/components/training/brand-mark"
 import { slides } from "@/components/training/slides"
 
@@ -58,7 +59,10 @@ export function TrainingDeck() {
 
   return (
     <div className="bg-background flex h-dvh flex-col">
-      <header className="flex items-center justify-between gap-4 border-b border-white/10 bg-[linear-gradient(135deg,#004165_0%,#0d6a9e_100%)] px-4 py-3 text-white md:px-10">
+      <header
+        className="flex items-center justify-between gap-4 border-b border-white/10 px-4 py-3 text-white md:px-10"
+        style={{ background: BRAND_HEADER_GRADIENT }}
+      >
         <div className="flex min-w-0 items-center gap-3">
           <BrandMark priority />
           <p className="hidden truncate text-sm text-white/75 md:block">

@@ -2,19 +2,24 @@ export const SITE_NAME = "Spotlight Iași"
 
 export const SITE_TITLE = "Contestant Training | Spotlight Iași Toastmasters Club"
 
+export const SITE_APP_NAME = "Spotlight Iași — Contestant Training"
+
+export const SITE_SHORT_NAME = "Contestant Training"
+
 export const SITE_DESCRIPTION =
   "Contestant training for Spotlight Iași's club speech contest — everything Humorous Speech and Table Topics contestants need to know, from eligibility to contest day."
 
 const PRODUCTION_URL = "https://training.spotlightiasi.club"
 
-export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.NODE_ENV === "production" ? PRODUCTION_URL : "http://localhost:3000")
-
-export const PARENT_SITE_URL = "https://spotlightiasi.club"
-
-export function getAbsoluteUrl(pathname: string) {
-  const url = new URL(pathname, SITE_URL).toString()
-
-  return url.endsWith("/") ? url.slice(0, -1) : url
+function resolveSiteUrl() {
+  if (process.env.NEXT_PUBLIC_SITE_URL) return process.env.NEXT_PUBLIC_SITE_URL
+  if (process.env.VERCEL_ENV === "production") return PRODUCTION_URL
+  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`
+  if (process.env.NODE_ENV === "production") return PRODUCTION_URL
+  return "http://localhost:3000"
 }
+
+export const SITE_URL = resolveSiteUrl()
+
+export const BRAND_HEADER_GRADIENT =
+  "linear-gradient(135deg, #004165 0%, #0d6a9e 100%)"

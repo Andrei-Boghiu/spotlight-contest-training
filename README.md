@@ -19,10 +19,13 @@ pass to stay in sync.
 
 ## SEO
 
-This page is intentionally set to `noindex` (see `app/layout.tsx` and `app/robots.ts`) — it's
-an internal tool for club contestants, not public marketing content, so it's kept out of
-search rather than competing with the main site. Open Graph / Twitter card metadata is still
-fully wired up so a direct link (e.g. shared in the club WhatsApp) unfurls properly.
+This page is intentionally kept out of search — it's an internal tool for club contestants,
+not public marketing content. The actual noindex directive is the `robots` meta tag in
+`app/layout.tsx`. `app/robots.ts` deliberately does the opposite of what you'd expect —
+it `allow`s crawling rather than disallowing it, because a `disallow` would stop crawlers
+from ever reading that noindex tag, letting an externally-linked URL surface as a bare
+search result anyway. Open Graph / Twitter card metadata is still fully wired up so a direct
+link (e.g. shared in the club WhatsApp) unfurls properly.
 
 ## Development
 
@@ -32,6 +35,21 @@ npm run build      # production build
 npm run typecheck  # tsc --noEmit
 npm run format     # prettier --write
 ```
+
+## Deployment
+
+Hosted on Vercel. `lib/site.ts` picks the site URL used for the canonical link, Open Graph
+tags, and the OG image: Vercel's own `VERCEL_ENV` (`"production" | "preview" | "development"`)
+decides between the real domain (`training.spotlightiasi.club`) and that specific preview
+deployment's `VERCEL_URL`, so previews always unfurl pointing at themselves rather than at
+production — `NODE_ENV` alone can't make that distinction, since Next sets it to
+`"production"` for every build, previews included. Set `NEXT_PUBLIC_SITE_URL` only to override
+this (e.g. a custom staging domain that isn't a `*.vercel.app` preview URL) — it isn't needed
+for normal Vercel preview/production deployments.
+
+Make sure the project's production domain is actually set to `training.spotlightiasi.club` in
+Vercel's project settings (Domains) — `PRODUCTION_URL` in `lib/site.ts` assumes that, and
+won't self-correct if the assigned domain differs.
 
 ## Stack
 

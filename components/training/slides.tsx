@@ -24,10 +24,12 @@ export const slides: Slide[] = [
         <p className="text-secondary mt-3 text-xl font-semibold md:text-2xl">
           Humorous Speech &amp; Table Topics
         </p>
-        <Lede>
-          Everything you need to know to compete fairly, avoid an accidental
-          disqualification, and know exactly what to expect.
-        </Lede>
+        <div className="mx-auto max-w-2xl">
+          <Lede>
+            Everything you need to know to compete fairly, avoid an
+            accidental disqualification, and know exactly what to expect.
+          </Lede>
+        </div>
       </div>
     ),
   },
@@ -143,9 +145,9 @@ export const slides: Slide[] = [
         <SlideTitle>What &ldquo;Content&rdquo; Actually Covers</SlideTitle>
         <div className="mt-6 grid gap-6 md:grid-cols-2">
           <div>
-            <p className="text-secondary font-heading text-lg font-bold">
+            <h2 className="text-secondary font-heading text-lg font-bold">
               Table Topics
-            </p>
+            </h2>
             <Bullets
               items={[
                 <>
@@ -160,9 +162,9 @@ export const slides: Slide[] = [
             />
           </div>
           <div>
-            <p className="text-secondary font-heading text-lg font-bold">
+            <h2 className="text-secondary font-heading text-lg font-bold">
               Humorous Speech
-            </p>
+            </h2>
             <Bullets
               items={[
                 <>
@@ -457,9 +459,9 @@ export const slides: Slide[] = [
         <SlideTitle>Quick Recap</SlideTitle>
         <div className="mt-6 grid gap-6 md:grid-cols-3">
           <div>
-            <p className="text-secondary font-heading text-lg font-bold">
+            <h2 className="text-secondary font-heading text-lg font-bold">
               Before
-            </p>
+            </h2>
             <Bullets
               items={[
                 "Forms signed & submitted",
@@ -470,13 +472,16 @@ export const slides: Slide[] = [
             />
           </div>
           <div>
-            <p className="text-secondary font-heading text-lg font-bold">
+            <h2 className="text-secondary font-heading text-lg font-bold">
               During
-            </p>
+            </h2>
             <Bullets
               items={[
                 "Phone silent",
-                "“Thank you, Contest Chair” → wait for “You're welcome”",
+                <>
+                  &ldquo;Thank you, Contest Chair&rdquo; → wait for
+                  &ldquo;You&apos;re welcome&rdquo;
+                </>,
                 "Know your time window",
                 "Don't reference other contestants",
                 "Table Topics: no notes, no devices, wait outside until called",
@@ -484,9 +489,9 @@ export const slides: Slide[] = [
             />
           </div>
           <div>
-            <p className="text-secondary font-heading text-lg font-bold">
+            <h2 className="text-secondary font-heading text-lg font-bold">
               After
-            </p>
+            </h2>
             <Bullets
               items={[
                 "Clear your props",

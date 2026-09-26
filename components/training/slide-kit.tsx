@@ -71,9 +71,10 @@ export function DataTable({
       <table className="w-full border-collapse text-left">
         <thead>
           <tr className="bg-primary text-primary-foreground">
-            {columns.map((col) => (
+            {columns.map((col, i) => (
               <th
-                key={col}
+                key={i}
+                scope="col"
                 className="px-3 py-2 text-sm font-semibold md:text-base"
               >
                 {col}

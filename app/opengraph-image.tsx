@@ -3,7 +3,12 @@ import { join } from "node:path"
 
 import { ImageResponse } from "next/og"
 
-import { SITE_NAME, SITE_TITLE } from "@/lib/site"
+import {
+  BRAND_HEADER_GRADIENT,
+  SITE_NAME,
+  SITE_SHORT_NAME,
+  SITE_TITLE,
+} from "@/lib/site"
 
 export const alt = SITE_TITLE
 export const size = {
@@ -29,7 +34,7 @@ export default async function Image() {
           width: "100%",
           height: "100%",
           padding: "0 96px",
-          background: "linear-gradient(135deg, #004165 0%, #0d6a9e 100%)",
+          background: BRAND_HEADER_GRADIENT,
         }}
       >
         <img
@@ -44,7 +49,7 @@ export default async function Image() {
             {SITE_NAME}
           </div>
           <div style={{ fontSize: 34, color: "rgba(255,255,255,0.9)" }}>
-            Contestant Training
+            {SITE_SHORT_NAME}
           </div>
           <div style={{ fontSize: 26, color: "rgba(255,255,255,0.7)" }}>
             Humorous Speech &amp; Table Topics

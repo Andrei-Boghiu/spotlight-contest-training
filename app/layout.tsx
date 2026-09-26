@@ -4,7 +4,13 @@ import { Montserrat, Source_Sans_3 } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
-import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from "@/lib/site"
+import {
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  SITE_SHORT_NAME,
+  SITE_TITLE,
+  SITE_URL,
+} from "@/lib/site"
 
 const fontHeading = Montserrat({
   subsets: ["latin"],
@@ -55,7 +61,7 @@ export const metadata: Metadata = {
     apple: "/apple-icon.png",
   },
   appleWebApp: {
-    title: "Contestant Training",
+    title: SITE_SHORT_NAME,
     statusBarStyle: "default",
   },
 }
