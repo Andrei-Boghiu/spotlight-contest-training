@@ -44,7 +44,7 @@ export const slides: Slide[] = [
             "Speech contests are part of Toastmasters' educational program — real speaking experience for you, and a chance for the club to learn by watching.",
             "Today we're running two separate contests, back-to-back: Humorous Speech and Table Topics. Each one wraps up fully before the next begins.",
             <>
-              Win here, and you move on:{" "}
+              Place 1st here, and you move on:{" "}
               <strong>Club → Area D4 → Division D → District.</strong>
             </>,
             "These two contest types stop at District — only the International Speech Contest goes further.",
@@ -92,7 +92,11 @@ export const slides: Slide[] = [
               "Only the moment you're introduced",
             ],
             ["Time limit", "5–7 minutes", "1–2 minutes"],
-            ["Notes allowed?", "Yes, it's prepared", "No — spontaneous"],
+            [
+              "Can you prepare it in advance?",
+              "Yes — it's a full prepared speech",
+              "No — it's spontaneous",
+            ],
             [
               "Where you wait",
               "In the room the whole time",
@@ -236,7 +240,7 @@ export const slides: Slide[] = [
               1st = <strong>3 points</strong>, 2nd = <strong>2 points</strong>,
               3rd = <strong>1 point</strong> — most total points wins.
             </>,
-            "You don't need one flawless, perfect speech — you need to land in the top 3 for enough judges.",
+            "You don't need one flawless, perfect speech — you just need enough judges to individually rank you in their top three.",
             "Judged purely on your speech — never your club, age, gender, or background. You (and the audience) generally won't know who judged you, either.",
             "If there's ever a tie, a secret tiebreaking judge — unknown to everyone but the chief judge — settles it.",
           ]}
@@ -306,7 +310,7 @@ export const slides: Slide[] = [
         <Bullets
           items={[
             "Signal equipment fails? You automatically get 30 extra seconds of grace.",
-            "Need an alternate signal (buzzer, bell, spoken time)? Just ask the contest chair in advance.",
+            "Visually impaired? You can request an alternate signal (buzzer, bell, spoken time) — just ask the contest chair in advance.",
           ]}
         />
       </>
@@ -343,7 +347,7 @@ export const slides: Slide[] = [
         <Bullets
           items={[
             "Briefing: names confirmed, rules reviewed, mic tested, you draw for speaking order.",
-            "Running late or missed the briefing? Tell the contest chair immediately — miss your introduction and your alternate takes over.",
+            "Running late or missed the briefing? Tell the contest chair immediately. If you still haven't shown up by the time the contest chair is introduced to begin the contest, you're disqualified and your alternate officially takes your place — this is much earlier than your own speaking turn.",
             "~20 min out: one more rules reminder. ~5 min out: everyone takes their seats.",
             "Contest opens: ground rules announced to the whole audience — for Humorous, they'll also mention your content is self-chosen and could be personal. That's routine, not a comment on you.",
           ]}
@@ -359,7 +363,7 @@ export const slides: Slide[] = [
         <SlideTitle>When It&apos;s Your Turn</SlideTitle>
         <Bullets
           items={[
-            "Introduced by name + title/topic, said twice — no preamble, no hype.",
+            "You're introduced with your name and your speech title (or your topic, for Table Topics) — each said twice, nothing else. No preamble, no hype, no comments about you or your subject.",
             <>
               Walk up right away, say{" "}
               <strong>&ldquo;Thank you, Contest Chair.&rdquo;</strong>
@@ -368,7 +372,7 @@ export const slides: Slide[] = [
               Wait for <strong>&ldquo;You&apos;re welcome&rdquo;</strong> —
               that&apos;s when your timing officially starts.
             </>,
-            "When you finish, quietly return to your seat (or exit, for Table Topics) and clear any props during the minute of silence that follows.",
+            "When you finish, quietly return to your seat and clear any props during the minute of silence that follows.",
           ]}
         />
         <Callout tone="blue">
@@ -425,10 +429,10 @@ export const slides: Slide[] = [
         <SlideTitle>Protests</SlideTitle>
         <Bullets
           items={[
-            "Only contestants and judges can raise a protest — never the audience.",
-            "Limited to eligibility, originality, or referencing another contestant's speech.",
+            "Only contestants and judges can raise a protest, and only to the contest chair or chief judge — audience objections are never considered.",
+            "Limited to eligibility, originality, or referencing another contestant's speech — not scoring or opinions.",
             "Must be raised before the contest is officially declared over.",
-            "If it's about your speech, you'll get a chance to explain your side first.",
+            "If the protest is about your speech, the voting judges will hear your side before they decide anything.",
           ]}
         />
       </>
@@ -442,9 +446,12 @@ export const slides: Slide[] = [
         <SlideTitle>Advancing Beyond Club Level</SlideTitle>
         <Bullets
           items={[
-            "1st place advances to represent the club at the next level.",
-            "To advance, you have to stay eligible the whole way through.",
-            "If the winner can't compete at the next level, the next-highest-placed contestant steps in.",
+            "The 1st place winner advances to represent the club at the Area D4 contest.",
+            <>
+              To advance, you have to stay eligible the whole way through —
+              same rules as the &ldquo;Am I Eligible?&rdquo; slide.
+            </>,
+            "If the winner can't compete at Area D4, the next-highest-placed contestant from today steps in instead.",
             "Reminder: for these two contest types, the chain stops at District.",
           ]}
         />
